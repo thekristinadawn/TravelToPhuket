@@ -34,6 +34,20 @@ body {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
+.embed {
+  width: 100%;
+  aspect-ratio: 1 /1;
+}
+
+.card {
+  background: white;
+  margin: 30px 0;
+}
+
+.card-header.grid {
+  grid-gap: 0;
+}
+
 .card-body {
   padding: 30px;
 }
@@ -164,7 +178,7 @@ main p {
 footer {
   color: white;
   background-image: linear-gradient(rgba(4, 96, 104, 1), rgba(4, 96, 104, 0.2)),
-    url("../images/phuket-beach-image-fb.png");
+    url("../images/palm-tree-phuket.png");
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -179,7 +193,7 @@ footer h3 {
 footer p {
   font-weight: 400;
   font-size: 16px;
-  opacity: 0.7;
+  opacity: 0.9;
   line-height: 24px;
 }
 
@@ -195,7 +209,7 @@ footer li {
 
 footer a {
   color: white;
-  opacity: 0.7;
+  opacity: 0.9;
 }
 
 @media (max-width: 960px) {
@@ -222,5 +236,13 @@ footer a {
 
   section {
     padding: 30px;
+  }
+
+  .card-header img {
+    display: none;
+  }
+
+  .embed {
+    aspect-ratio: 16 / 9;
   }
 }
