@@ -1,11 +1,15 @@
 body {
   font-family: "Poppins", sans-serif;
-  background: #272044;
+  background: #034950;
 }
 
 .container {
   max-width: 1400px;
   margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .grid {
@@ -15,57 +19,56 @@ body {
 
 .img-responsive {
   max-width: 100%;
+  display: block;
 }
 
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
 }
 
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .grid-3-columns-with-first-narrow {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
-section {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 100px 0;
+.card-body {
+  padding: 30px;
 }
 
-main {
-  background-color: white;
+.card-footer {
+  padding: 0 30px 30px;
 }
 
-main h2 {
+.btn {
+  display: block;
+  color: white;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
-  margin: 0;
-  letter-spacing: 7px;
-  color: #272044;
-  opacity: 0.3;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 3px;
   text-transform: uppercase;
+  padding: 16px;
+  background-color: #0aa79d;
+  text-decoration: none;
 }
 
-main h3 {
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 1.5;
-  color: #272044;
-  margin: 0;
+section {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 100px;
 }
 
-main p {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #272044;
-  opacity: 0.7;
+section.secondary {
+  background-color: #f8f8f8;
 }
 
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../images/phuket-thailand.jpg");
+    url("../images/phuket-boats.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
@@ -100,7 +103,7 @@ header a {
   font-size: 14px;
   line-height: 1.5;
   text-align: center;
-  color: #272044;
+  color: #0d372be5;
   padding: 16px 32px;
   margin-top: 32px;
   display: inline-block;
@@ -110,12 +113,57 @@ header a {
   background: white;
 }
 
+main {
+  background-color: white;
+}
+
+main h2 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  letter-spacing: 7px;
+  color: #046068;
+  opacity: 0.3;
+  text-transform: uppercase;
+}
+
+main h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.5;
+  color: #046068;
+  margin: 0;
+}
+
+main h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  color: #046068;
+  margin: 0;
+}
+
+main h5 {
+  font-weight: 700;
+  font-size: 13px;
+  margin: 0;
+  line-height: 1;
+  color: #046068;
+}
+
+main p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #046068;
+  opacity: 0.7;
+}
+
 footer {
   color: white;
-  background-image: linear-gradient(
-      rgba(39, 32, 68, 0.9),
-      rgba(39, 32, 68, 0.9)
-    ),
+  background-image: linear-gradient(rgba(4, 96, 104, 1), rgba(4, 96, 104, 0.2)),
     url("../images/phuket-beach-image-fb.png");
 
   background-repeat: no-repeat;
